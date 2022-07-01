@@ -1,7 +1,7 @@
 #pragma once
 class Vector2
 {
-private:
+public:
 	float x;
 	float y;
 public:
@@ -15,7 +15,7 @@ public:
 
 	//ƒƒ“ƒoŠÖ”
 	float length();					//’·‚³‚ğ•Ô‚·
-	Vector2 normalize();			//³‹K‰»
+	Vector2& normalize();			//³‹K‰»
 	float dot(const Vector2& v);	//“àÏ‚ğ•Ô‚·
 	float cross(const Vector2& v);	//ŠOÏ‚ğ•Ô‚·
 

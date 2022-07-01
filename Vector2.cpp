@@ -19,7 +19,7 @@ float Vector2::length()
 	return sqrt(x * x + y * y);
 }
 
-Vector2 Vector2::normalize()
+Vector2& Vector2::normalize()
 {
 	float len = length();
 	if (len != 0)
@@ -27,6 +27,7 @@ Vector2 Vector2::normalize()
 		return *this /= length();
 	}
 	return *this;
+	
 }
 
 float Vector2::dot(const Vector2& v)
